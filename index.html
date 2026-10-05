@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Vasuprada & Tharun | Luxury Wedding Invitation</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <audio id="bg-music" loop>
+        <source src="music/romantic.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-btn" class="hidden luxury-icon-btn" title="Toggle Luxury Ambience">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <div id="particles-container"></div>
+
+    <div id="intro-screen">
+        <div class="glossy-bg"></div>
+        <div class="cinematic-spotlight"></div>
+        
+        <div class="intro-content text-center">
+            <div class="luxury-image-wrapper fade-up">
+                <img src="gallery/couple-main.png" alt="S Vasuprada & Tharun" class="intro-couple-img" onerror="this.src='https://images.unsplash.com/photo-1583939000240-690b17170881?auto=format&fit=crop&w=600'">
+                <div class="gold-ring-glow"></div>
+            </div>
+            
+            <h3 class="intro-subtitle montserrat text-ivory fade-up delay-1">An Evening Of Elegance</h3>
+            <h1 class="intro-names playfair gold-foil fade-up delay-2">S Vasuprada <span>&</span> Tharun</h1>
+            
+            <button id="enter-btn" class="luxury-btn fade-up delay-3 mt-40">
+                <span class="btn-text">Open Invitation</span>
+                <span class="btn-shimmer"></span>
+            </button>
+        </div>
+        <div id="light-burst"></div>
+    </div>
+
+    <main id="main-content" class="hidden">
+        
+        <nav id="navbar" class="luxury-nav">
+            <div class="logo playfair gold-foil">S <span>&</span> T</div>
+            <ul class="nav-links montserrat">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#couple">The Couple</a></li>
+                <li><a href="#story">Journey</a></li>
+                <li><a href="#invitation">Invite</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars text-gold"></i>
+            </div>
+        </nav>
+
+        <section id="hero" class="hero-section">
+            <div class="hero-bg parallax"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content reveal">
+                <p class="top-text montserrat text-ivory tracking-wide">THE WEDDING OF</p>
+                <h1 class="hero-title playfair gold-foil text-glow">S Vasuprada <br><span class="cursive text-white">&</span><br> Tharun</h1>
+                <p class="hero-date montserrat text-gold tracking-wide">29 OCT 2026</p>
+                
+                <div class="luxury-divider"></div>
+                
+                <div class="countdown montserrat" id="countdown">
+                    <div class="time-box black-glass"><span id="days" class="playfair gold-foil">00</span><p>Days</p></div>
+                    <div class="time-box black-glass"><span id="hours" class="playfair gold-foil">00</span><p>Hours</p></div>
+                    <div class="time-box black-glass"><span id="minutes" class="playfair gold-foil">00</span><p>Minutes</p></div>
+                    <div class="time-box black-glass"><span id="seconds" class="playfair gold-foil">00</span><p>Seconds</p></div>
+                </div>
+
+                <div class="hero-buttons mt-40">
+                    <a href="#events" class="luxury-btn"><span class="btn-text">View Celebration</span></a>
+                    <a href="#story" class="luxury-btn outline"><span class="btn-text">Explore Details</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="couple" class="couple-section section-padding bg-glossy-black">
+            <div class="container text-center">
+                <h2 class="section-title playfair gold-foil reveal">The Elegant Pair</h2>
+                <div class="split-layout">
+                
+                    <!-- BRIDE SECTION -->
+                    <div class="person-card black-glass reveal delay-1">
+                        <div class="card-spotlight bottom-right"></div>
+                        <p class="overline montserrat text-ivory tracking-wide mb-10">THE BRIDE</p>
+                        <div class="person-img-wrapper hover-zoom">
+                            <img src="gallery/bride.jpg" alt="S Vasuprada">
+                        </div>
+                        <h2 class="person-name playfair gold-foil mt-20">Dr. S Vasuprada</h2>
+                        <h4 class="montserrat text-gold tracking-wide mt-1" style="font-size: 1.1rem; font-weight: 500;">Pharm.D.</h4>
+                        <div class="minimal-gold-line"></div>
+                        <p class="montserrat text-ivory mt-10">Only daughter of<br>Smt. S. Chandrakala & Late .Sri S. Govindaiah</p>
+                    </div>
+                    
+                    <!-- GROOM SECTION -->
+                    <div class="person-card black-glass reveal">
+                        <div class="card-spotlight top-left"></div>
+                        <p class="overline montserrat text-ivory tracking-wide mb-10">THE GROOM</p>
+                        <div class="person-img-wrapper hover-zoom">
+                            <img src="gallery/groom.jpg" alt="Tharun">
+                        </div>
+                        <h2 class="person-name playfair gold-foil mt-20">I Tharun Kumar Goud</h2>
+                        <h4 class="montserrat text-gold tracking-wide mt-1" style="font-size: 1.1rem; font-weight: 500;">B.Tech.</h4>
+                        <div class="minimal-gold-line"></div>
+                        <p class="montserrat text-ivory mt-10">Son of<br>S/o. Smt. I Padmavathi & Sri. I Sreenivasulu Goud Kurnool.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story-section section-padding bg-dark-charcoal">
+            <div class="container text-center">
+                <h2 class="section-title playfair gold-foil reveal">A Timeless Journey</h2>
+                <div class="gold-timeline">
+                    
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content black-glass">
+                            <h3 class="playfair text-gold">The First Meeting</h3>
+                            <p class="montserrat text-ivory mt-10">An elegant evening where two paths crossed and destiny was written.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content black-glass">
+                            <h3 class="playfair text-gold">The Beginning</h3>
+                            <p class="montserrat text-ivory mt-10">Late night conversations and shared dreams paved the way to our story.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content black-glass">
+                            <h3 class="playfair text-gold">Falling In Love</h3>
+                            <p class="montserrat text-ivory mt-10">Discovering a rare and beautiful connection that felt like home.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content black-glass">
+                            <h3 class="playfair text-gold">Forever Promise</h3>
+                            <p class="montserrat text-ivory mt-10">A diamond ring, a magical question, and an eternal 'Yes'.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="invitation" class="invitation-section section-padding bg-glossy-black">
+            <div class="container text-center">
+                <div class="invite-card black-glass gold-border reveal">
+                    <img src="gallery/ganesh.png" alt="Shree Ganesh" class="ganesh-icon gold-glow" onerror="this.src='https://cdn-icons-png.flaticon.com/512/10006/10006450.png'">
+                    <h3 class="mantra montserrat text-ivory tracking-wide">II SHREE SHREE GANESHAY NAMAH II</h3>
+                    
+                    <p class="quote playfair text-gold mt-20 italic">"Suragani Family's<br>Wedding Invitation"</p>
+                    
+                    <div class="luxury-divider"></div>
+                    
+                    <p class="parents montserrat text-ivory tracking-wide">Smt. S. Chandrakala & Late .Sri S. Govindaiah Tirupati.</p>
+                    <p class="invite-text playfair text-ivory mt-20">Solicit your esteemed presence with family and friends on the auspicious occasion of the marriage of our only Daughter</p>
+                    
+                    <h2 class="person-name playfair gold-foil mt-30">S Vasuprada</h2>
+                    <p class="with-text cursive text-white mt-10 mb-10">With</p>
+                    <h2 class="person-name playfair gold-foil">Tharun</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events-section section-padding bg-dark-charcoal">
+            <div class="container text-center">
+                <h2 class="section-title playfair gold-foil reveal">The Grand Affairs</h2>
+                <div class="events-grid">
+                    
+                    <div class="event-card black-glass reveal delay-2 hover-glow">
+                        <i class="fas fa-ring event-icon text-gold"></i>
+                        <h3 class="playfair text-gold">Sumuhurtham</h3>
+                        <div class="minimal-gold-line"></div>
+                        <p class="date montserrat text-gold">29th OCT 2026 </p>
+                        <p class="time montserrat text-ivory">08:05 AM</p>
+                        <p class="venue montserrat text-ivory mt-10">in Vrushika Lagnam</p>
+                        <a href="https://share.google/jWE34uIRyzn3j93RI" target="_blank" style="color: #d4af37; text-decoration: none; margin-top: 15px; display: inline-block; font-size: 0.95rem; font-weight: 500;"><i class="fas fa-map-marker-alt"></i> View on Map</a>
+                    </div>
+
+                    <div class="event-card black-glass reveal delay-3 hover-glow">
+                        <i class="fas fa-glass-cheers event-icon text-gold"></i>
+                        <h3 class="playfair text-gold">Reception</h3>
+                        <div class="minimal-gold-line"></div>
+                        <p class="date montserrat text-gold">01st NOV 2026</p>
+                        <p class="time montserrat text-ivory">11:00 AM</p>
+                        <p class="venue montserrat text-ivory mt-10">at Ashok Palace, Tanapalli Cross Road, Gajalakshmi colony, Tirupati.</p>
+                        <a href="https://share.google/SOqh8SqEr9xcKTyr1" target="_blank" style="color: #d4af37; text-decoration: none; margin-top: 15px; display: inline-block; font-size: 0.95rem; font-weight: 500;"><i class="fas fa-map-marker-alt"></i> View on Map</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section section-padding bg-glossy-black">
+            <div class="container text-center">
+                <h2 class="section-title playfair gold-foil reveal">Captured Elegance</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item gold-border reveal" onclick="openLightbox(this)"><img src="gallery/prewedding1.jpg" alt="Pre Wedding" onerror="this.src='https://images.unsplash.com/photo-1583939000240-690b17170881?auto=format&fit=crop&w=600'"><div class="overlay montserrat tracking-wide text-gold">Pre Wedding</div></div>
+                    <div class="gallery-item gold-border reveal" onclick="openLightbox(this)"><img src="gallery/prewedding2.jpg" alt="Pre Wedding" onerror="this.src='https://images.unsplash.com/photo-1621689972304-4b53ce7240c3?auto=format&fit=crop&w=600'"><div class="overlay montserrat tracking-wide text-gold">Pre Wedding</div></div>
+                    <div class="gallery-item gold-border reveal" onclick="openLightbox(this)"><img src="gallery/prewedding3.jpg" alt="Haldi" onerror="this.src='https://images.unsplash.com/photo-1621316447600-664dc4401809?auto=format&fit=crop&w=600'"><div class="overlay montserrat tracking-wide text-gold">Pre Wedding</div></div>
+                    <div class="gallery-item gold-border reveal" onclick="openLightbox(this)"><img src="gallery/prewedding4.jpg" alt="Wedding" onerror="this.src='https://images.unsplash.com/photo-1544253723-3b10b03698fb?auto=format&fit=crop&w=600'"><div class="overlay montserrat tracking-wide text-gold">Pre Wedding</div></div>
+                    <div class="gallery-item gold-border reveal" onclick="openLightbox(this)"><img src="gallery/prewedding5.jpg" alt="Reception" onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600'"><div class="overlay montserrat tracking-wide text-gold">Pre Wedding</div></div>
+                    <div class="gallery-item gold-border reveal" onclick="openLightbox(this)"><img src="gallery/prewedding6.jpg" alt="Reception" onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600'"><div class="overlay montserrat tracking-wide text-gold">Pre Wedding</div></div>
+                </div>
+            </div>
+        </section>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close-btn" onclick="closeLightbox()">×</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+
+        <section id="map" class="map-section section-padding bg-dark-charcoal reveal">
+            <div class="container text-center">
+                <h2 class="section-title playfair gold-foil">Premium Venue</h2>
+                <div class="map-container black-glass gold-border">
+                    <div class="map-info">
+                        <i class="fas fa-map-marker-alt text-gold gold-glow" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h3 class="playfair text-white">Event Locations</h3>
+                        <p class="montserrat text-ivory mt-10">Somisetty Tanish Convention Hall (Wedding)<br>Ashok Palace (Reception)</p>
+                        
+                        <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                            <a href="https://share.google/jWE34uIRyzn3j93RI" target="_blank" class="luxury-btn"><span class="btn-text">Wedding Location Map</span></a>
+                            <a href="https://share.google/SOqh8SqEr9xcKTyr1" target="_blank" class="luxury-btn"><span class="btn-text">Reception Location Map</span></a>
+                        </div>
+                    </div>
+                    <div class="map-embed">
+                        <!-- Defaulting the iframe view to the Wedding location style (iframe cannot take the short link directly) -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.329074414942!2d78.02460657489897!3d15.839292584807394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5e74ef05bc5c9%3A0x8e9bbe8137eb6115!2sSomisetty%20Tanish%20Convention!5e0!3m2!1sen!2sin!4v1791176878189!5m2!1sen!2sin" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="rsvp" class="footer-section section-padding bg-glossy-black text-center reveal">
+            <div class="container">
+                
+                <div class="blessings-card">
+                    <p class="blessing-text playfair text-ivory italic">"Be a part of our elegant celebration and bless the happy couple with your love and blessings."</p>
+                    <p class="montserrat tracking-wide text-silver mt-40" style="font-size: 0.9rem;">WARM REGARDS</p>
+                    <h4 class="playfair gold-foil mt-10" style="font-size: 2.5rem;">Suragani Family</h4>
+                </div>
+
+                <div class="luxury-divider mt-50 mb-50"></div>
+
+                <div class="rsvp-card black-glass gold-border reveal">
+                    <h2 class="section-title playfair text-white" style="font-size: 2.5rem; margin-bottom: 20px;">With the Best Compliments from:</h2>
+                    <p class="montserrat text-ivory mb-10">Sri S Babu & Smt. Krishnaven</p>
+                    <p class="montserrat text-ivory mb-20">Sri I Purushotham & Smt. Girija Devi Relatives & Friends</p>
+                    
+                    <div class="contact-actions mt-40">
+                        <a href="tel:+919515958828" class="social-btn"><i class="fas fa-phone-alt"></i></a>
+                        <a href="https://wa.me/919515958828" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <p class="copyright montserrat text-silver mt-50">Crafted with Elegance & <span class="text-gold">♥</span> for S Vasuprada & Tharun</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
